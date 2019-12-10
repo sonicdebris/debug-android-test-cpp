@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name='Debug Tests'
+
+include ":library"
