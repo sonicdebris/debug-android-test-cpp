@@ -12,6 +12,6 @@ class FooLibraryTests {
     fun testInLibraryModule() {
         loadLibrary()
         val res = Foo().stringFromJNI()
-        assertEquals("Hkello from C++", res)
+        assertEquals("Hello from C++", res)
     }
 }

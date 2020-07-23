@@ -16,6 +16,6 @@ class FooAppTests {
     fun testInAppModule() {
         loadLibrary()
         val res = Foo().stringFromJNI()
-        assertEquals("*Hello from C++", res)
+        assertEquals("Hello from C++", res)
     }
 }

@@ -2,5 +2,8 @@ A simple android application where all native (C++) code is in the `library` mod
 
 Trivial instrumentation tests can be found in both `library` and `app` modules.
 
-- `FooAppTests` (`app` module): it runs fine and you can attach either the java or the c++ debugger without issues.
-- `FooLibraryTests` (`library` module): it runs fine and you can attach a java debugger, but attaching a c++ one will fail.
+Attaching the native debugger when running tests defined in a library module used to be broken...
+
+BUT
+
+I tested this on Android Studio 4.2 Canary 3 and it looks like now you can attach the c++ debugger when running tests, no matter in which module.
